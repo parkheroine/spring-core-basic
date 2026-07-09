@@ -25,8 +25,10 @@ public class BeanLifeCycleTest {
             networkClient.setUrl("http://hello-spring.dev");
 
             //출력결과
-            //생성자 호출, url = null
-            // connect: null
+//            생성자 호출, url = null
+//            connect: http://hello-spring.dev
+//            call: http://hello-spring.dev message = 초기화 연결 메시지
+//            close: http://hello-spring.dev
             return networkClient;
         }
     }
